@@ -54,6 +54,9 @@
                                 <div>
                                     Payment Status: <strong>{{ $sale->payment_status }}</strong>
                                 </div>
+                                <div>
+                                    Payment Method: <strong>{{ $sale->payment_method }}</strong>
+                                </div>
                             </div>
 
                         </div>

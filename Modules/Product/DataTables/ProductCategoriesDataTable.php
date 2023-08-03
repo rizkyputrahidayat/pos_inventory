@@ -60,7 +60,7 @@ class ProductCategoriesDataTable extends DataTable
             //     ->addClass('text-center')->visible(false),
 
             Column::make('products_count')
-                ->addClass('text-center'),
+                ->addClass('text-center')->visible(false),
 
             Column::computed('action')
                 ->exportable(false)
