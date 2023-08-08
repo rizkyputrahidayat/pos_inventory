@@ -54,8 +54,14 @@
                                         </td>
 
                                         <td class="align-middle">
-                                            {{ format_currency($cart_item->price) }} <br>
-                                           Disc {{ format_currency($cart_item->options->product_discount) }}
+                                            {{-- <s> {{ format_currency($cart_item->options->unit_price) }}</s> <br> --}}
+                                            {{ format_currency($cart_item->options->unit_price) }} <br>
+                                            Disc {{ format_currency($cart_item->options->product_discount) }} <br>
+                                            @if ($cart_item->options->product_discount != 0)
+                                                <span>
+                                                    {{ format_currency($cart_item->price) }}
+                                            @endif
+                                            </span>
                                         </td>
 
                                         <td class="align-middle">
