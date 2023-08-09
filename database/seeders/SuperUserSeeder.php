@@ -19,6 +19,7 @@ class SuperUserSeeder extends Seeder
         $user = User::create([
             'name' => 'Administrator',
             'email' => 'super.admin@test.com',
+            'business_location_id' =>  '1',
             'password' => Hash::make(12345678),
             'is_active' => 1
         ]);

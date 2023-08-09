@@ -1,13 +1,15 @@
 <?php
 
-namespace Modules\Currency\Entities;
+namespace Modules\Business\Entities;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Currency extends Model
+class Business extends Model
 {
     use HasFactory;
 
     protected $guarded = [];
+
+    protected $table = 'business';
 }

@@ -11,6 +11,12 @@
 |
 */
 
-Route::prefix('business')->group(function() {
-    Route::get('/', 'BusinessController@index');
+// Route::prefix('business')->group(function() {
+//     Route::get('/', 'BusinessController@index');
+// });
+// use Modules\Business\Http\Controllers\BusinessController;
+
+
+Route::group(['middleware' => 'auth'], function() {
+    Route::resource('business', 'BusinessController')-> except('show');
 });
