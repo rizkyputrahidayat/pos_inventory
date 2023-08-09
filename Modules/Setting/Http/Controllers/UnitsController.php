@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Setting\Entities\Unit;
 
-class   UnitsController extends Controller
+class UnitsController extends Controller
 {
 
     public function index() {
