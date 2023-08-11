@@ -27,6 +27,7 @@ class CreateProductsTable extends Migration
             $table->integer('product_order_tax')->nullable();
             $table->tinyInteger('product_tax_type')->nullable();
             $table->text('product_note')->nullable();
+            $table->integer('business_location_id')->nullable();
             $table->foreign('category_id')->references('id')->on('categories')->restrictOnDelete();
             $table->timestamps();
         });
