@@ -8,8 +8,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Business extends Model
 {
     use HasFactory;
-
-    protected $guarded = [];
-
     protected $table = 'business';
+    protected $fillable = [
+        'location_id',
+        'name',
+        'address',
+        'city',
+        'zip_code',
+        'country',
+        'mobile',
+        'email',
+    ];
+    protected $guarded = [];
 }
