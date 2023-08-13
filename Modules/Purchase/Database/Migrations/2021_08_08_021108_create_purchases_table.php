@@ -29,8 +29,10 @@ class CreatePurchasesTable extends Migration
             $table->integer('due_amount');
             $table->string('status');
             $table->string('payment_status');
+            $table->string('business_location_id');
             $table->string('payment_method');
             $table->text('note')->nullable();
+
             $table->foreign('supplier_id')->references('id')->on('suppliers')->nullOnDelete();
             $table->timestamps();
         });

@@ -30,7 +30,8 @@ class PurchaseController extends Controller
 
         Cart::instance('purchase')->destroy();
 
-        return view('purchase::create');
+        $business_data = DB::select("select * from business");
+        return view('purchase::create', compact('business_data'));
     }
 
 
