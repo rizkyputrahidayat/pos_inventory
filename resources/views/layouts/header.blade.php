@@ -53,7 +53,7 @@
                 <img class="c-avatar rounded-circle" src="{{ auth()->user()->getFirstMediaUrl('avatars') }}" alt="Profile Image">
             </div>
             <div class="d-flex flex-column">
-                <span class="font-weight-bold">{{ auth()->user()->business_location_id }}</span>
+                <span class="font-weight-bold">{{ auth()->user()->name }}</span>
                 <span class="font-italic">Online <i class="bi bi-circle-fill text-success" style="font-size: 11px;"></i></span>
             </div>
         </a>

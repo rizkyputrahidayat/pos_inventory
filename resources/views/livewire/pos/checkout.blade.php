@@ -41,7 +41,9 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {{ $cart_items }}
+                            {{-- For detail item transsaction card --}}
+                            {{-- {{ $cart_items }} --}}
+
                             @if ($cart_items->isNotEmpty())
                                 @foreach ($cart_items as $cart_item)
                                     <tr>
